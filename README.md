@@ -475,7 +475,7 @@ A documentação técnica do projecto contempla:
 
 **Estudante 1:** Amisse Ruicho Chale
 
-**Estudante 2:** [A preencher]
+**Estudante 2:** Vicky Guarda
 
 ---
 

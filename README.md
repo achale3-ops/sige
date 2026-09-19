@@ -471,6 +471,16 @@ A documentação técnica do projecto contempla:
 * controlo de acesso RBAC;
 * testes realizados.
 
+### Diagramas do Projecto
+
+Os diagramas utilizados na análise e modelação do SIGE estão disponíveis no repositório:
+
+1. [Diagrama de Casos de Uso](docs/diagramas/01-casos-de-uso.png)
+2. [Diagrama de Classes](docs/diagramas/02-diagrama-classes.png)
+3. [Diagrama de Actividades](docs/diagramas/03-diagrama-actividades.png)
+4. [Diagrama de Sequência](docs/diagramas/04-diagrama-sequencia.png)
+5. [Modelo Entidade-Relacionamento](docs/diagramas/05-modelo-er.png)
+
 ---
 
 ## 14. Integrantes do Grupo

@@ -113,7 +113,7 @@ Papéis implementados:
 3. Técnico
 4. Dirigente
 
-Cada utilizador possui um papel, e cada papel possui um conjunto de permissões.
+Cada utilizador possui um papel, e cada papel possui um conjunto de permissões definido no sistema.
 
 ### 4.4 Gestão de Expedientes
 
@@ -186,19 +186,19 @@ O módulo de relatórios permite consultar expedientes utilizando filtros por:
 
 ## 5. Matriz de Permissões
 
-| Funcionalidade            | Administrador | Recepcionista | Técnico | Dirigente |
-| ------------------------- | :-----------: | :-----------: | :-----: | :-------: |
-| Iniciar sessão            |       ✓       |       ✓       |    ✓    |     ✓     |
-| Gerir utilizadores        |       ✓       |       —       |    —    |     —     |
-| Gerir papéis e permissões |       ✓       |       —       |    —    |     —     |
-| Registar expediente       |       ✓       |       ✓       |    —    |     —     |
-| Consultar expediente      |       ✓       |       ✓       |    ✓    |     ✓     |
-| Tramitar expediente       |       ✓       |       —       |    ✓    |     —     |
-| Consultar histórico       |       ✓       |       ✓       |    ✓    |     ✓     |
-| Registar despacho         |       ✓       |       —       |    —    |     ✓     |
-| Arquivar expediente       |       ✓       |       —       |    —    |     ✓     |
-| Consultar auditoria       |       ✓       |       —       |    —    |     —     |
-| Consultar relatórios      |       ✓       |       ✓       |    ✓    |     ✓     |
+| Funcionalidade       | Administrador | Recepcionista | Técnico | Dirigente |
+| -------------------- | :-----------: | :-----------: | :-----: | :-------: |
+| Iniciar sessão       |       ✓       |       ✓       |    ✓    |     ✓     |
+| Gerir utilizadores   |       ✓       |       —       |    —    |     —     |
+| Atribuir papéis      |       ✓       |       —       |    —    |     —     |
+| Registar expediente  |       ✓       |       ✓       |    —    |     —     |
+| Consultar expediente |       ✓       |       ✓       |    ✓    |     ✓     |
+| Tramitar expediente  |       ✓       |       —       |    ✓    |     —     |
+| Consultar histórico  |       ✓       |       ✓       |    ✓    |     ✓     |
+| Registar despacho    |       ✓       |       —       |    —    |     ✓     |
+| Arquivar expediente  |       ✓       |       —       |    —    |     ✓     |
+| Consultar auditoria  |       ✓       |       —       |    —    |     —     |
+| Consultar relatórios |       ✓       |       ✓       |    ✓    |     ✓     |
 
 ---
 
@@ -273,7 +273,7 @@ Relacionamentos principais:
 ### 8.1 Clonar o projecto
 
 ```bash
-git clone <LINK_DO_REPOSITORIO_GITHUB>
+git clone https://github.com/achale3-ops/sige.git
 cd sige
 ```
 
@@ -418,7 +418,9 @@ Durante o desenvolvimento foram realizados testes funcionais dos principais mód
 * relatórios;
 * restrição de acesso a funcionalidades não autorizadas.
 
-Também foi verificado o ciclo completo de um expediente:
+Também foram executados testes automatizados do sistema, incluindo testes específicos de controlo de acesso por papéis.
+
+O ciclo completo de um expediente foi igualmente verificado:
 
 ```text
 RECEBIDO
@@ -444,7 +446,7 @@ O desenvolvimento foi realizado de forma incremental, seguindo etapas de:
 4. modelação da base de dados;
 5. implementação;
 6. implementação do RBAC;
-7. testes funcionais;
+7. testes funcionais e automatizados;
 8. documentação;
 9. preparação do repositório Git/GitHub.
 
@@ -483,7 +485,7 @@ A documentação técnica do projecto contempla:
 
 Repositório público do projecto:
 
-**[A preencher após publicação no GitHub]**
+**https://github.com/achale3-ops/sige**
 
 ---
 
@@ -502,10 +504,12 @@ O sistema encontra-se implementado com os principais módulos funcionais previst
 * [x] Auditoria
 * [x] Relatórios
 * [x] Base de dados MySQL
+* [x] Testes automatizados
 * [x] Testes funcionais
 * [x] Versionamento com Git
+* [x] Repositório público no GitHub
 
-A publicação do repositório no GitHub e a documentação académica final serão concluídas nas etapas seguintes.
+A documentação académica final será concluída nas etapas seguintes.
 
 ---
 
